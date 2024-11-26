@@ -1,0 +1,39 @@
+.footerContainer {
+  color: rgb(75 85 99);
+  padding: 0 20px;
+
+  .icon {
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    margin: 40px 0;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+  }
+
+  .introduce {
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+
+    .text {
+      font-size: 12px;
+      cursor: pointer;
+
+      &:hover {
+        color: rgb(42, 48, 56);
+      }
+    }
+  }
+}
+
+@media (max-width: 765px) {
+  .footerContainer {
+    .introduce {
+      display: block;
+    }
+  }
+}

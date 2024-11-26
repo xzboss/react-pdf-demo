@@ -1,0 +1,58 @@
+.headerContainer {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .menuItem {
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .menuSmall {
+    display: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .headerContainer {
+    .menuLarge {
+      display: none;
+    }
+    .menuSmall {
+      display: block;
+      position: static;
+      cursor: pointer;
+
+      .menuItems {
+        background-color: #fff;
+        padding: 10px 20px;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        line-height: 40px;
+        font-weight: 600;
+
+        .menuItem {
+          display: block;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.operationContainer {
+  color: #fff;
+
+  .buttonZoomIn,
+  .buttonZoomOut {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 14px -10px black;
+
+    img {
+        width: 20px;
+        height: 20px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.mainContainer {
+  background-color: #f7f5ee;
+  color: rgb(75 85 99);
+  padding: 30px 0;
+
+  .uploadBox {
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    width: 275px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px dashed rgb(170, 168, 168);
+  }
+}
+
+// @media (max-width: 765px) {
+
+// }
