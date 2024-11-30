@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import style from "./index.module.scss";
 import Operation from "./components/Operation";
+import "react-pdf/dist/Page/AnnotationLayer.css";
+import "react-pdf/dist/Page/TextLayer.css";
 
 export default function index() {
   const [file, setFile] = useState(null);
@@ -16,6 +18,7 @@ export default function index() {
       {!isOperate ? (
         <div>
           <input
+            accept=".pdf"
             type="file"
             name=""
             id="upload-input"

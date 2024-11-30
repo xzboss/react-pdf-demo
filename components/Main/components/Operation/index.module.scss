@@ -1,6 +1,7 @@
 .operationContainer {
-  color: #fff;
-
+  button {
+    color: #fff;
+  }
   .buttonZoomIn,
   .buttonZoomOut {
     width: 35px;
@@ -13,8 +14,52 @@
     box-shadow: 0 2px 14px -10px black;
 
     img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .pdfContainer {
+    margin: 40px 0;
+    user-select: none;
+
+    .pdfItem {
+      padding: 10px;
+      position: relative;
+      background-color: #fff;
+      padding-bottom: 40px;
+
+      &:hover {
+        cursor: pointer;
+        background-color: rgb(249 250 251);
+      }
+
+      .rotateIcon {
         width: 20px;
         height: 20px;
+        padding: 5px;
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        z-index: 2;
+        background-color: #ff6125;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .pageNum {
+        position: absolute;
+        bottom: 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
+      }
     }
   }
 }
